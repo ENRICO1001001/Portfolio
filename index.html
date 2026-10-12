@@ -1,0 +1,89 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- All text lives in config.js: no need to edit this file to change content -->
+  <title>Enrico Rampino</title>
+  <meta name="description" content="Enrico Rampino — Software Developer (.NET & C#) based in Yokohama, Japan.">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Link previews (LinkedIn, LINE, X...): these crawlers don't run JavaScript, so the values live here -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://enrico1001001.github.io/Portfolio/">
+  <meta property="og:title" content="Enrico Rampino — Software Developer">
+  <meta property="og:description" content="Computer Engineering graduate and .NET / C# developer based in Yokohama, Japan. Portfolio in English and Japanese.">
+  <meta property="og:image" content="https://enrico1001001.github.io/Portfolio/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="effects.css">
+  <script>
+    // Apply the saved theme before first paint to avoid a flash
+    try {
+      var t = localStorage.getItem('theme');
+      if (t) document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main"></a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="brand" href="#top">
+        <span class="brand-mark" data-field="initials"></span>
+      </a>
+      <ul class="nav-links" id="nav-links"></ul>
+      <div class="nav-actions">
+        <div class="lang-switch" role="group"></div>
+        <button class="theme-toggle" type="button">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="hero-bg" aria-hidden="true">
+      <span class="blob blob-1"></span>
+      <span class="blob blob-2"></span>
+      <span class="blob blob-3"></span>
+      <div class="hero-grid"></div>
+    </div>
+    <section class="hero container" id="top"></section>
+    <div class="marquee" aria-hidden="true"><div class="marquee-track"></div></div>
+    <section class="section container reveal" id="about"></section>
+    <section class="section container reveal" id="experience"></section>
+    <section class="section container reveal" id="projects"></section>
+    <section class="section container reveal" id="skills"></section>
+    <section class="section container reveal" id="education"></section>
+    <section class="section container reveal" id="contact"></section>
+    <noscript><p class="container">Please enable JavaScript to view this site.</p></noscript>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year"></span> <span data-field="name"></span></p>
+    <a href="#top" class="mono" data-field="backToTop"></a>
+  </footer>
+
+  <a class="to-top" href="#top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </a>
+
+  <script src="config.js"></script>
+  <script src="effects.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
