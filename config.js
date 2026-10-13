@@ -195,9 +195,9 @@ window.PORTFOLIO_CONFIG = {
         // percent = lunghezza della barra (0-100)
         spoken: [
           { name: "Italian", level: "Native", percent: 100 },
-          { name: "English", level: "B1", percent: 55 },
+          { name: "English", level: "B2", percent: 70 },
           { name: "French", level: "A2", percent: 35 },
-          { name: "Japanese", level: "A2 · studying", percent: 35 }
+          { name: "Japanese", level: "N4 level · studying", percent: 35 }
         ]
       },
       contact: {
@@ -374,9 +374,9 @@ window.PORTFOLIO_CONFIG = {
         ],
         spoken: [
           { name: "Italiano", level: "Madrelingua", percent: 100 },
-          { name: "Inglese", level: "B1", percent: 55 },
+          { name: "Inglese", level: "B2", percent: 70 },
           { name: "Francese", level: "A2", percent: 35 },
-          { name: "Giapponese", level: "A2 · in studio", percent: 35 }
+          { name: "Giapponese", level: "Livello N4 · in studio", percent: 35 }
         ]
       },
       contact: {
@@ -552,9 +552,9 @@ window.PORTFOLIO_CONFIG = {
         ],
         spoken: [
           { name: "イタリア語", level: "母語", percent: 100 },
-          { name: "英語", level: "B1", percent: 55 },
+          { name: "英語", level: "B2", percent: 70 },
           { name: "フランス語", level: "A2", percent: 35 },
-          { name: "日本語", level: "A2・学習中", percent: 35 }
+          { name: "日本語", level: "N4相当・学習中", percent: 35 }
         ]
       },
       contact: {
