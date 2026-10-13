@@ -6,17 +6,17 @@
  *  del sito: index.html non va toccato.
  *
  *  - "profile": dati uguali in tutte le lingue (nome, contatti).
- *  - "languages": un blocco per lingua ("en", "ja", ...).
+ *  - "languages": un blocco per lingua ("en", "it", "ja").
  *    Ogni blocco ha la stessa struttura: se aggiungi un lavoro,
  *    un progetto o una skill, ricordati di farlo in tutte le lingue.
- *  - Per aggiungere una lingua (es. italiano), copia il blocco "en",
- *    rinominalo "it" e traduci i testi: il pulsante compare da solo.
+ *  - Per aggiungere una lingua (es. francese), copia il blocco "en",
+ *    rinominalo "fr" e traduci i testi: il pulsante compare da solo.
  *  - Icone disponibili per i progetti:
  *    lock, bell, ticket, school, chat, shield, code, database
  * ============================================================
  */
 window.PORTFOLIO_CONFIG = {
-  // Lingua mostrata alla prima visita ("en" o "ja")
+  // Lingua mostrata alla prima visita ("en", "it" o "ja")
   defaultLanguage: "en",
 
   profile: {
@@ -37,7 +37,7 @@ window.PORTFOLIO_CONFIG = {
       label: "EN",
       htmlLang: "en",
       meta: {
-        title: "Enrico Rampino — Software Developer",
+        title: "Enrico Rampino | Software Developer",
         description: "Enrico Rampino, Computer Engineering graduate and .NET / C# software developer based in Yokohama, Japan."
       },
       ui: {
@@ -63,7 +63,7 @@ window.PORTFOLIO_CONFIG = {
         roleTech: ".NET & C#",
         // Frasi che si scrivono e cancellano a rotazione sotto il nome
         roles: ["Software Developer", ".NET & C# Engineer", "Backend Builder", "Problem Solver"],
-        lead: "Computer Engineering graduate with two years of hands-on experience building and maintaining business software — from secure data transfer to real-time monitoring systems.",
+        lead: "Computer Engineering graduate with two years of hands-on experience building and maintaining business software, from secure data transfer to real-time monitoring systems.",
         location: "Yokohama, Japan",
         status: "Open to opportunities",
         ctaPrimary: "Get in touch",
@@ -89,7 +89,7 @@ window.PORTFOLIO_CONFIG = {
             company: "N&C",
             period: "Sep 2023 – Jun 2025",
             place: "Veglie, Italy",
-            summary: "Designed, developed and maintained .NET applications with the technical team — both new systems and the optimization of existing ones.",
+            summary: "Designed, developed and maintained .NET applications with the technical team, working on both new systems and the optimization of existing ones.",
             bullets: [
               "Hardened a secure SFTP data transfer application and took it to production.",
               "Built an alarm notification and remote monitoring system focused on service continuity.",
@@ -212,13 +212,191 @@ window.PORTFOLIO_CONFIG = {
     },
 
     /* ------------------------------------------------------------
+     *  ITALIANO
+     * ------------------------------------------------------------ */
+    it: {
+      label: "IT",
+      htmlLang: "it",
+      meta: {
+        title: "Enrico Rampino | Sviluppatore Software",
+        description: "Enrico Rampino, laureato in Ingegneria Informatica e sviluppatore software .NET / C# con base a Yokohama, Giappone."
+      },
+      ui: {
+        skipLink: "Vai al contenuto",
+        openMenu: "Apri menu",
+        closeMenu: "Chiudi menu",
+        toggleTheme: "Attiva/disattiva tema scuro",
+        language: "Lingua",
+        backToTop: "Torna su ↑",
+        nav: {
+          about: "Chi sono",
+          experience: "Esperienza",
+          projects: "Progetti",
+          skills: "Competenze",
+          education: "Formazione",
+          contact: "Contatti"
+        }
+      },
+      hero: {
+        greeting: "Ciao, sono",
+        nameReading: "",
+        role: "Sviluppatore Software",
+        roleTech: ".NET & C#",
+        roles: ["Sviluppatore Software", "Ingegnere .NET & C#", "Sviluppatore Backend", "Problem Solver"],
+        lead: "Laureato in Ingegneria Informatica, con due anni di esperienza concreta nello sviluppo e nella manutenzione di software aziendale, dal trasferimento sicuro dei dati ai sistemi di monitoraggio in tempo reale.",
+        location: "Yokohama, Giappone",
+        status: "Aperto a nuove opportunità",
+        ctaPrimary: "Contattami",
+        ctaSecondary: "Guarda i progetti"
+      },
+      about: {
+        title: "Chi sono",
+        paragraphs: [
+          "Sono neolaureato in Ingegneria Informatica e ho voglia di mettere in pratica e far crescere le competenze acquisite durante gli studi universitari e la mia esperienza come sviluppatore .NET.",
+          "Sono affidabile e propositivo: affronto il lavoro con impegno e attenzione ai dettagli, e do valore alla collaborazione e al confronto costruttivo. Mi piace risolvere problemi e lavoro bene in team."
+        ],
+        stats: [
+          { value: "2+", label: "anni di sviluppo software" },
+          { value: "6", label: "progetti rilasciati o prototipati" },
+          { value: "4", label: "lingue parlate" }
+        ]
+      },
+      experience: {
+        title: "Esperienza",
+        items: [
+          {
+            role: "Junior Software Developer",
+            company: "N&C",
+            period: "Set 2023 – Giu 2025",
+            place: "Veglie, Italia",
+            summary: "Ho progettato, sviluppato e mantenuto applicazioni .NET insieme al team tecnico, lavorando sia su nuovi sistemi sia sull'ottimizzazione di quelli esistenti.",
+            bullets: [
+              "Ho reso più robusta un'applicazione per il trasferimento sicuro di dati via SFTP e l'ho portata in produzione.",
+              "Ho realizzato un sistema di notifica allarmi e monitoraggio remoto orientato alla continuità del servizio.",
+              "Ho gestito la piattaforma interna per i dipendenti, con particolare attenzione a formazione e apprendimento.",
+              "Ho creato un sistema di ticketing IT interno che ha reso più rapido il supporto tecnico.",
+              "Ho contribuito all'architettura di un prototipo di chatbot AI basato su Google Gemini."
+            ],
+            tags: ["C#", ".NET Framework", "ASP.NET MVC", "Entity Framework", "SQL Server", "MQTT", "Gemini AI"]
+          },
+          {
+            role: "Tirocinante Sviluppo Software",
+            company: "N&C",
+            period: "Mar 2023 – Ago 2023",
+            place: "Veglie, Italia",
+            summary: "",
+            bullets: [
+              "Ho partecipato all'analisi dei dati tramite il database Infocenter.",
+              "Ho sviluppato soluzioni software gestionali.",
+              "Ho sviluppato software per il trasferimento di dati tramite server SFTP.",
+              "Ho sviluppato uno strumento che permette agli utenti di inviare segnalazioni in forma anonima."
+            ],
+            tags: []
+          },
+          {
+            role: "Tutor",
+            company: "Centro Studi Vergari",
+            period: "Gen 2025 – Lug 2025",
+            place: "Trepuzzi, Italia",
+            summary: "Tutor per tre percorsi di formazione professionale GOL/2023: “Addetto alla segreteria” (due edizioni) e “Aiuto cuoco e supporto all'allestimento sala”.",
+            bullets: [],
+            tags: []
+          },
+          {
+            role: "Volontario",
+            company: "Associazione Nazionale della Polizia di Stato",
+            period: "Mag 2021 – Dic 2021",
+            place: "Brindisi, Italia",
+            summary: "Ho applicato e monitorato le misure di distanziamento sociale, gestito i flussi di ingresso e uscita e comunicato in modo chiaro con il pubblico per garantire un'esperienza ordinata e sicura.",
+            bullets: [],
+            tags: []
+          }
+        ]
+      },
+      projects: {
+        title: "Progetti in evidenza",
+        intro: "Lavori realizzati durante la mia esperienza in N&C. Sono progetti interni all'azienda, quindi il codice non è pubblico.",
+        items: [
+          {
+            icon: "lock",
+            title: "Trasferimento dati sicuro via SFTP",
+            text: "Iniziato durante il tirocinio e poi revisionato, ottimizzato e portato in produzione. Ho migliorato robustezza, sicurezza e affidabilità per i flussi di dati sensibili.",
+            tags: ["C#", ".NET", "SFTP"]
+          },
+          {
+            icon: "bell",
+            title: "Allarmi e monitoraggio remoto",
+            text: "Un sistema di notifica e monitoraggio remoto pensato per comunicazioni tempestive e stabili, con particolare cura per la continuità del servizio e la gestione degli eventi critici.",
+            tags: ["C#", "MQTT", "Mosquitto"]
+          },
+          {
+            icon: "ticket",
+            title: "Sistema di ticketing IT",
+            text: "Uno strumento interno per raccogliere, tracciare e risolvere le richieste di supporto, che ha reso più efficiente l'assistenza tecnica aziendale.",
+            tags: ["ASP.NET MVC", "Entity Framework", "SQL Server"]
+          },
+          {
+            icon: "school",
+            title: "Piattaforma formazione dipendenti",
+            text: "Gestione e manutenzione della piattaforma interna per i dipendenti, sia dal lato tecnico sia da quello organizzativo della digitalizzazione delle attività formative.",
+            tags: ["ASP.NET", "SQL Server"]
+          },
+          {
+            icon: "chat",
+            title: "Prototipo di chatbot AI",
+            text: "Un chatbot basato su Gemini per l'interazione con i dipendenti e un vocabolario aziendale interno. Mi sono occupato di architettura, integrazione iniziale, analisi semantica e UX.",
+            tags: ["Gemini AI", "NLP", ".NET"]
+          },
+          {
+            icon: "shield",
+            title: "Strumento di segnalazione anonima",
+            text: "Software che permette agli utenti di inviare segnalazioni in forma anonima, sviluppato durante il tirocinio.",
+            tags: ["C#", ".NET"]
+          }
+        ]
+      },
+      skills: {
+        title: "Competenze",
+        groups: [
+          { name: "Linguaggi", items: ["C#", "Java", "JavaScript", "Python", "PHP", "C", "C++", "SQL"] },
+          { name: "Backend e framework", items: [".NET", "ASP.NET MVC", "Entity Framework", "API REST", "MQTT / Mosquitto"] },
+          { name: "Frontend", items: ["HTML", "CSS", "Bootstrap", "jQuery", "JSON"] },
+          { name: "Database", items: ["SQL Server", "MySQL", "PostgreSQL"] },
+          { name: "Strumenti e cloud", items: ["Git", "Visual Studio", "Docker (base)", "AWS (base)"] },
+          { name: "IT e sistemi", items: ["Sicurezza dei sistemi", "Installazione HW e SW", "Configurazione dispositivi", "Assistenza clienti"] }
+        ]
+      },
+      education: {
+        title: "Formazione e lingue",
+        items: [
+          { period: "2023 – 2025", degree: "Laurea triennale in Ingegneria Informatica", school: "Università Mercatorum · Roma, Italia" },
+          { period: "2017 – 2022", degree: "Diploma di scuola superiore", school: "ITT Enrico Fermi · Lecce, Italia" }
+        ],
+        spoken: [
+          { name: "Italiano", level: "Madrelingua", percent: 100 },
+          { name: "Inglese", level: "B1", percent: 55 },
+          { name: "Francese", level: "A2", percent: 35 },
+          { name: "Giapponese", level: "A2 · in studio", percent: 35 }
+        ]
+      },
+      contact: {
+        title: "Lavoriamo insieme",
+        text: "Sto cercando il mio prossimo ruolo come sviluppatore software. Se hai un'opportunità da propormi o vuoi semplicemente salutarmi, scrivimi pure.",
+        emailLabel: "Gmail",
+        emailHint: "Inviami un'email",
+        linkedinLabel: "LinkedIn",
+        githubLabel: "GitHub"
+      }
+    },
+
+    /* ------------------------------------------------------------
      *  日本語 (JAPANESE)
      * ------------------------------------------------------------ */
     ja: {
       label: "日本語",
       htmlLang: "ja",
       meta: {
-        title: "Enrico Rampino — ソフトウェア開発者",
+        title: "Enrico Rampino | ソフトウェア開発者",
         description: "コンピュータ工学を専攻し、.NET / C# のソフトウェア開発者として活動するエンリコ・ランピーノのポートフォリオ。横浜在住。"
       },
       ui: {
